@@ -14,7 +14,7 @@ spec:
     targetRevision: main
   destination:
     name: in-cluster
-    namespace: codefresh
+    namespace: test
   syncPolicy:
     automated:
       prune: false
