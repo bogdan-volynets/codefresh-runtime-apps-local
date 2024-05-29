@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: resources-prod
-    repoURL: https://github.com/eti-codefresh/guestbook-local.git
+    repoURL: https://github.com/bogdan-volynets/guestbook-local
     targetRevision: main
   destination:
     name: in-cluster
