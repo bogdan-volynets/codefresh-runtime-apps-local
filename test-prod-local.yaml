@@ -14,7 +14,7 @@ spec:
     targetRevision: main
   destination:
     name: in-cluster
-    namespace: production
+    namespace: test-prod
   syncPolicy:
     automated:
       prune: true
