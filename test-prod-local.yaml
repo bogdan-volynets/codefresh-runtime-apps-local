@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: resources-prod
-    repoURL: https://github.com/bogdan-volynets/guestbook-local
+    repoURL: https://github.com/bogdan-volynets/guestbook-local-other
     targetRevision: main
   destination:
     name: in-cluster
