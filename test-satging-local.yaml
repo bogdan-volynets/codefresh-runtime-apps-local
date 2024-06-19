@@ -1,11 +1,11 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  labels:
-    "codefresh.io/product": "my-product"
   name: test-staging-local
   finalizers:
     - resources-finalizer.argocd.argoproj.io/foreground
+  labels:
+    codefresh.io/product: my-product
 spec:
   project: default
   source:
@@ -16,10 +16,6 @@ spec:
     name: in-cluster
     namespace: staging
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: false
-      allowEmpty: false
     syncOptions:
       - PrunePropagationPolicy=foreground
       - Replace=false
