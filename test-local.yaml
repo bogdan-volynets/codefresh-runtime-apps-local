@@ -16,6 +16,10 @@ spec:
     name: in-cluster
     namespace: eti-local-runtime
   syncPolicy:
+    automated:
+      prune: false
+      selfHeal: false
+      allowEmpty: false
     syncOptions:
       - PrunePropagationPolicy=foreground
       - Replace=false
