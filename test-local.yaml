@@ -14,7 +14,7 @@ spec:
     targetRevision: main
   destination:
     name: in-cluster
-    namespace: eti-local-runtime
+    namespace: dev
   syncPolicy:
     automated:
       prune: false
@@ -25,7 +25,7 @@ spec:
       - Replace=false
       - PruneLast=false
       - Validate=true
-      - CreateNamespace=false
+      - CreateNamespace=true
       - ApplyOutOfSyncOnly=false
       - ServerSideApply=true
       - RespectIgnoreDifferences=false
