@@ -8,7 +8,7 @@ metadata:
     codefresh.io/product: two
     testing: two
   annotations:
-    codefresh.io/product: new
+    codefresh.io/product: ttest
 spec:
   project: default
   source:
