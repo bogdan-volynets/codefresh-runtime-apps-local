@@ -5,7 +5,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io/foreground
   annotations:
-    codefresh.io/product: test-product-new
+    codefresh.io/product: new
 spec:
   project: default
   source:
