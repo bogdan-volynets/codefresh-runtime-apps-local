@@ -7,6 +7,8 @@ metadata:
   labels:
     codefresh.io/product: two
     testing: two
+  annotations:
+    codefresh.io/product: new
 spec:
   project: default
   source:
