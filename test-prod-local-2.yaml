@@ -7,8 +7,6 @@ metadata:
   labels:
     codefresh.io/product: three
     testing: three
-  annotations:
-    codefresh.io/product: conflict
 spec:
   project: default
   source:
