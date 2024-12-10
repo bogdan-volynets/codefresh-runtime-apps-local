@@ -4,6 +4,8 @@ metadata:
   name: test
   finalizers:
     - resources-finalizer.argocd.argoproj.io/foreground
+  annotations:
+    codefresh.io/product: new-yaml-product
 spec:
   project: default
   source:
