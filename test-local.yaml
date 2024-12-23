@@ -5,16 +5,16 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io/foreground
   annotations:
-    codefresh.io/product: new-yaml-product
+    codefresh.io/product: new-product-test
 spec:
   project: default
+  destination:
+    name: in-cluster
+    namespace: test
   source:
     path: resources
     repoURL: https://github.com/bogdan-volynets/guestbook-local
     targetRevision: main
-  destination:
-    name: in-cluster
-    namespace: test
   syncPolicy:
     automated:
       prune: false
