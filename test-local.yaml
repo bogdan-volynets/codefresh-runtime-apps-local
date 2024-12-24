@@ -5,7 +5,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io/foreground
   annotations:
-    codefresh.io/product: new-3
+    codefresh.io/product: new
 spec:
   project: default
   destination:
@@ -23,7 +23,7 @@ spec:
     syncOptions:
       - PrunePropagationPolicy=foreground
       - Replace=false
-      - PruneLast=true
+      - PruneLast=false
       - Validate=true
       - CreateNamespace=true
       - ApplyOutOfSyncOnly=false
