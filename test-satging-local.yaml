@@ -6,15 +6,17 @@ metadata:
     - resources-finalizer.argocd.argoproj.io/foreground
   labels:
     codefresh.io/product: my-product
+  annotations:
+    codefresh.io/product: my-product
 spec:
   project: default
+  destination:
+    name: in-cluster
+    namespace: staging
   source:
     path: resources-staging
     repoURL: https://github.com/eti-codefresh/guestbook-local.git
     targetRevision: HEAD
-  destination:
-    name: in-cluster
-    namespace: staging
   syncPolicy:
     automated:
       prune: false
