@@ -6,15 +6,17 @@ metadata:
     - resources-finalizer.argocd.argoproj.io/foreground
   labels:
     codefresh.io/product: my-product
+  annotations:
+    codefresh.io/product: my-product
 spec:
   project: default
+  destination:
+    name: in-cluster
+    namespace: production
   source:
     path: resources-prod
     repoURL: https://github.com/eti-codefresh/guestbook-local.git
     targetRevision: main
-  destination:
-    name: in-cluster
-    namespace: production
   syncPolicy:
     automated:
       prune: true
