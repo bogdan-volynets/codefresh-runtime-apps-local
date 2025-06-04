@@ -12,10 +12,10 @@ spec:
   project: default
   destination:
     name: in-cluster
-    namespace: production
+    namespace: test-prod
   source:
     path: resources-prod
-    repoURL: https://github.com/eti-codefresh/guestbook-local.git
+    repoURL: https://github.com/bogdan-volynets/guestbook-local
     targetRevision: main
   syncPolicy:
     automated:
