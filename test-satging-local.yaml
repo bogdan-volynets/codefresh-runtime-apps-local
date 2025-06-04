@@ -12,10 +12,10 @@ spec:
   project: default
   destination:
     name: in-cluster
-    namespace: staging
+    namespace: test-staging
   source:
     path: resources-staging
-    repoURL: https://github.com/eti-codefresh/guestbook-local.git
+    repoURL: https://github.com/bogdan-volynets/guestbook-local
     targetRevision: HEAD
   syncPolicy:
     automated:
